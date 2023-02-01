@@ -58,7 +58,7 @@ inputs.forEach((input, currentIndex) => {
 
   // backspace event and arrow key event
   input.addEventListener("keydown", (e) => {
-    if (e.keyCode === 8 || e.key === "Backspace") {
+    if (e.keyCode === 8 || e.key === "Backspace" || e.key === 4) {
       e.preventDefault();
       input.value = "";
       // console.log(input.value);
